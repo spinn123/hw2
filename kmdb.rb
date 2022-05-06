@@ -71,12 +71,48 @@
 # Use `Model.destroy_all` code.
 # TODO!
 
+Movie.destroy_all
+
 # Generate models and tables, according to the domain model.
 # TODO!
+
+
+
 
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
 # TODO!
+
+#Movie
+new_movie = Movie.new
+new_movie["title"]= "Batman Begins"
+new_movie["rating"]= "PG-13"
+new_movie["year_released"]= "2005"
+#new_movie["studio_id"]= warner_bros["id"]
+new_movie.save
+
+new_movie2 = Movie.new
+new_movie2["title"]= "The Dark Knight"
+new_movie2["rating"]= "PG-13"
+new_movie2["year_released"]= "2008"
+#new_movie2["studio_id"]= warner_bros["id"]
+new_movie2.save
+
+new_movie3 = Movie.new
+new_movie3["title"]= " The Dark Knight Rises"
+new_movie3["rating"]= "PG-13"
+new_movie3["year_released"]= "2012"
+#new_movie3["studio_id"]= warner_bros["id"]
+new_movie3.save
+
+#Studio
+new_studio = Studio.new
+new_studio["name"]= "Warner Bros"
+new_studio.save
+
+
+
+#can use data.rb bc that file is set up here
 
 # Prints a header for the movies output
 puts "Movies"
