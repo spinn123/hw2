@@ -160,11 +160,95 @@ new_actor11.save
 
 #Role 
 new_role = Role.new
-new_role["character_name"]= "Rachel Dawes"
+new_role["character_name"]= "Bruce Wayne"
 new_role["movie_id"] = new_movie["id"]
-new_role["actor_id"] = new_actor11["id"]
+new_role["actor_id"] = new_actor["id"]
 new_role.save
 
+new_role = Role.new
+new_role["character_name"]= "Alfred"
+new_role["movie_id"] = new_movie["id"]
+new_role["actor_id"] = new_actor2["id"]
+new_role.save
+
+new_role = Role.new
+new_role["character_name"]= "Ra's Al Ghul"
+new_role["movie_id"] = new_movie["id"]
+new_role["actor_id"] = new_actor3["id"]
+new_role.save
+
+new_role = Role.new
+new_role["character_name"]= "Rachel Dawes"
+new_role["movie_id"] = new_movie["id"]
+new_role["actor_id"] = new_actor4["id"]
+new_role.save
+
+new_role = Role.new
+new_role["character_name"]= "Commissioner Gordon"
+new_role["movie_id"] = new_movie["id"]
+new_role["actor_id"] = new_actor5["id"]
+new_role.save
+
+new_role = Role.new
+new_role["character_name"]= "Bruce Wayne"
+new_role["movie_id"] = new_movie2["id"]
+new_role["actor_id"] = new_actor["id"]
+new_role.save
+
+new_role = Role.new
+new_role["character_name"]= "Alfred"
+new_role["movie_id"] = new_movie2["id"]
+new_role["actor_id"] = new_actor2["id"]
+new_role.save
+
+
+new_role = Role.new
+new_role["character_name"]= "Rachel Dawes"
+new_role["movie_id"] = new_movie2["id"]
+new_role["actor_id"] = new_actor8["id"]
+new_role.save
+
+new_role = Role.new
+new_role["character_name"]= "Harvey Dent"
+new_role["movie_id"] = new_movie2["id"]
+new_role["actor_id"] = new_actor7["id"]
+new_role.save
+
+new_role = Role.new
+new_role["character_name"]= "Joker"
+new_role["movie_id"] = new_movie2["id"]
+new_role["actor_id"] = new_actor6["id"]
+new_role.save
+
+new_role = Role.new
+new_role["character_name"]= "Commissioner Gordon"
+new_role["movie_id"] = new_movie3["id"]
+new_role["actor_id"] = new_actor5["id"]
+new_role.save
+
+new_role = Role.new
+new_role["character_name"]= "Bruce Wayne"
+new_role["movie_id"] = new_movie3["id"]
+new_role["actor_id"] = new_actor["id"]
+new_role.save
+
+new_role = Role.new
+new_role["character_name"]= "Bane"
+new_role["movie_id"] = new_movie3["id"]
+new_role["actor_id"] = new_actor9["id"]
+new_role.save
+
+new_role = Role.new
+new_role["character_name"]= "John Blake"
+new_role["movie_id"] = new_movie3["id"]
+new_role["actor_id"] = new_actor10["id"]
+new_role.save
+
+new_role = Role.new
+new_role["character_name"]= "Rachel Dawes"
+new_role["movie_id"] = new_movie3["id"]
+new_role["actor_id"] = new_actor11["id"]
+new_role.save
 
 #can use data.rb bc that file is set up here
 
