@@ -250,8 +250,6 @@ new_role["movie_id"] = new_movie3["id"]
 new_role["actor_id"] = new_actor11["id"]
 new_role.save
 
-#can use data.rb bc that file is set up here
-
 # Prints a header for the movies output
 puts "Movies"
 puts "======"
@@ -263,12 +261,10 @@ puts ""
 all_movies = Movie.all
 for movie in all_movies 
     studio = Studio.find_by({"id"=>movie["studio_id"]})
-    puts "#{movie["title"]} #{movie["rating"]} #{movie["year_released"]} #{studio["name"]}"
+    puts "#{movie["title"]} | #{movie["rating"]} | #{movie["year_released"]} | #{studio["name"]}"
 end
 
-
 #thing = Thing.find_by({"id"=>1})
-
 
 # Prints a header for the cast output
 puts ""
@@ -278,3 +274,10 @@ puts ""
 
 # Query the cast data and loop through the results to display the cast output for each movie.
 # TODO!
+
+all_cast = Role.all
+for role in all_cast 
+    actor = Actor.find_by({"id"=>role["actor_id"]})
+    movie = Movie.find_by({"id"=>role["movie_id"]})
+    puts "#{role["character_name"]} | #{actor["name"]} | #{movie["title"]}" 
+end
